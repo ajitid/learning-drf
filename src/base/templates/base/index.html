@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Logged in? -> {{ user.is_authenticated }}</h1>
+{% include '_/button.html' with text='make action' %}
+{% include '_/link.html' with text='do this' to='https://www.google.com' %}
+{% include '_/field.html' with label='name' name='name' ph='yo mama' %}
+<img src="{% static 'c.png' %}" alt="">
+<p>checking static content still remaining</p>
+{% endblock content  %}

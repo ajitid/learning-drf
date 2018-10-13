@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="flex items-center justify-center mt-16">
+  <div class="border rounded p-4">
+    <h2 class="text-grey-dark mb-5">Login to your account</h2>
+
+    <form action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+
+      {% include '_/field.html' with label='Name' name='username' value=form.username.value id='username' ph='abhay_kr' attr='autofocus' errors=form.errors.username %}
+      {% include '_/field.html' with type='password' label='Password' name='password' id='password' ph='•••••••' errors=form.errors.password class='font-mono' %}
+
+
+      {% if form.non_field_errors %}
+        <ul class="list-reset text-red-light my-3">
+        {% for error in form.non_field_errors  %}
+          <li class="w-64">{{error}}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% include '_/button.html' with type='submit' text='Login' %}
+    </form>
+  </div>
+</div>
+{% endblock content %}

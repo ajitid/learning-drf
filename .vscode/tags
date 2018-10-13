@@ -1,0 +1,169 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../src/screens/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_seat_name.py	../src/screens/migrations/0002_seat_name.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../src/config/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../src/config/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:91
+ApiConfig	../src/api/apps.py	/^class ApiConfig(AppConfig):$/;"	kind:class	line:4
+AppConfig	../src/api/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../src/base/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../src/screens/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	../src/config/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+BaseConfig	../src/base/apps.py	/^class BaseConfig(AppConfig):$/;"	kind:class	line:4
+DATABASES	../src/config/settings.py	/^DATABASES = {$/;"	kind:variable	line:80
+DEBUG	../src/config/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+Employee	../src/base/models.py	/^class Employee(models.Model):$/;"	kind:class	line:5
+INSTALLED_APPS	../src/config/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../src/config/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:110
+LOGIN_REDIRECT_URL	../src/config/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:130
+LOGOUT_REDIRECT_URL	../src/config/settings.py	/^LOGOUT_REDIRECT_URL = '\/'$/;"	kind:variable	line:131
+LoginView	../src/base/urls.py	/^from django.contrib.auth.views import LoginView, LogoutView$/;"	kind:namespace	line:3
+LogoutView	../src/base/urls.py	/^from django.contrib.auth.views import LoginView, LogoutView$/;"	kind:namespace	line:3
+MIDDLEWARE	../src/config/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:46
+Meta	../src/api/serializers.py	/^    class Meta:$/;"	kind:class	line:16
+Meta	../src/api/serializers.py	/^    class Meta:$/;"	kind:class	line:8
+Migration	../src/screens/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../src/screens/migrations/0002_seat_name.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+ROOT_URLCONF	../src/config/settings.py	/^ROOT_URLCONF = 'config.urls'$/;"	kind:variable	line:56
+SECRET_KEY	../src/config/settings.py	/^SECRET_KEY = '!jm7i83)x6br82fg__!l^e&7y1lslruj+2tg*9gsto--cxw*ew'$/;"	kind:variable	line:23
+STATICFILES_DIRS	../src/config/settings.py	/^STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static-dev')]$/;"	kind:variable	line:126
+STATIC_URL	../src/config/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:124
+Screen	../src/api/serializers.py	/^from screens.models import Screen$/;"	kind:namespace	line:4
+Screen	../src/api/viewsets.py	/^from screens.models import Screen, Seat$/;"	kind:namespace	line:4
+Screen	../src/screens/models.py	/^class Screen(models.Model):$/;"	kind:class	line:6
+ScreenSerializer	../src/api/serializers.py	/^class ScreenSerializer(serializers.Serializer):$/;"	kind:class	line:13
+ScreenSerializer	../src/api/viewsets.py	/^from .serializers import UserSerializer, ScreenSerializer$/;"	kind:namespace	line:6
+ScreenViewSet	../src/api/urls.py	/^from .viewsets import UserViewSet, ScreenViewSet$/;"	kind:namespace	line:4
+ScreenViewSet	../src/api/viewsets.py	/^class ScreenViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:14
+ScreensConfig	../src/screens/apps.py	/^class ScreensConfig(AppConfig):$/;"	kind:class	line:4
+Seat	../src/api/viewsets.py	/^from screens.models import Screen, Seat$/;"	kind:namespace	line:4
+Seat	../src/screens/models.py	/^class Seat(models.Model):$/;"	kind:class	line:10
+TEMPLATES	../src/config/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:58
+TIME_ZONE	../src/config/settings.py	/^TIME_ZONE = 'Asia\/Kolkata'$/;"	kind:variable	line:112
+TestCase	../src/api/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../src/base/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../src/screens/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+USE_I18N	../src/config/settings.py	/^USE_I18N = True$/;"	kind:variable	line:114
+USE_L10N	../src/config/settings.py	/^USE_L10N = True$/;"	kind:variable	line:116
+USE_TZ	../src/config/settings.py	/^USE_TZ = True$/;"	kind:variable	line:118
+User	../src/api/serializers.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:2
+User	../src/api/viewsets.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:1
+User	../src/base/models.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:2
+UserCreationForm	../src/base/views.py	/^from django.contrib.auth.forms import UserCreationForm$/;"	kind:namespace	line:3
+UserSerializer	../src/api/serializers.py	/^class UserSerializer(serializers.HyperlinkedModelSerializer):$/;"	kind:class	line:7
+UserSerializer	../src/api/viewsets.py	/^from .serializers import UserSerializer, ScreenSerializer$/;"	kind:namespace	line:6
+UserViewSet	../src/api/urls.py	/^from .viewsets import UserViewSet, ScreenViewSet$/;"	kind:namespace	line:4
+UserViewSet	../src/api/viewsets.py	/^class UserViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:9
+WSGI_APPLICATION	../src/config/settings.py	/^WSGI_APPLICATION = 'config.wsgi.application'$/;"	kind:variable	line:74
+__init__.py	../src/api/__init__.py	1;"	kind:file	line:1
+__init__.py	../src/api/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../src/base/__init__.py	1;"	kind:file	line:1
+__init__.py	../src/config/__init__.py	1;"	kind:file	line:1
+__init__.py	../src/screens/__init__.py	1;"	kind:file	line:1
+__init__.py	../src/screens/migrations/__init__.py	1;"	kind:file	line:1
+admin	../src/api/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../src/base/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../src/config/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:16
+admin	../src/screens/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin.py	../src/api/admin.py	1;"	kind:file	line:1
+admin.py	../src/base/admin.py	1;"	kind:file	line:1
+admin.py	../src/screens/admin.py	1;"	kind:file	line:1
+aisle_seats	../src/screens/models.py	/^    aisle_seats = models.TextField()$/;"	kind:variable	line:14
+application	../src/config/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../src/api/apps.py	1;"	kind:file	line:1
+apps.py	../src/base/apps.py	1;"	kind:file	line:1
+apps.py	../src/screens/apps.py	1;"	kind:file	line:1
+authenticate	../src/base/views.py	/^from django.contrib.auth import login, authenticate$/;"	kind:namespace	line:2
+count	../src/screens/models.py	/^    count = models.IntegerField()$/;"	kind:variable	line:13
+create	../src/api/viewsets.py	/^    def create(self, request):$/;"	kind:member	line:33
+datetime	../src/screens/migrations/0002_seat_name.py	/^import datetime$/;"	kind:namespace	line:3
+db	../src/screens/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:4
+deletion	../src/screens/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:4
+dependencies	../src/screens/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../src/screens/migrations/0002_seat_name.py	/^    dependencies = [$/;"	kind:variable	line:10
+django	../src/screens/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:4
+execute_from_command_line	../src/manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	../src/screens/migrations/0002_seat_name.py	/^            field=models.CharField(default=datetime.datetime(2018, 10, 12, 18, 23, 2, 944364, tzinfo=utc), max_length=2),$/;"	kind:variable	line:18
+fields	../src/api/serializers.py	/^        fields = ('name')$/;"	kind:variable	line:18
+fields	../src/api/serializers.py	/^        fields = ('url', 'username', 'email', 'is_staff')$/;"	kind:variable	line:10
+fields	../src/screens/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:17
+fields	../src/screens/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:23
+get_wsgi_application	../src/config/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+include	../src/api/urls.py	/^from django.urls import path, include$/;"	kind:namespace	line:1
+include	../src/config/urls.py	/^from django.urls import path, include$/;"	kind:namespace	line:17
+index	../src/base/views.py	/^def index(request):$/;"	kind:function	line:6
+initial	../src/screens/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:9
+list	../src/api/viewsets.py	/^    def list(self, request):$/;"	kind:member	line:18
+login	../src/base/views.py	/^from django.contrib.auth import login, authenticate$/;"	kind:namespace	line:2
+manage.py	../src/manage.py	1;"	kind:file	line:1
+migrations	../src/screens/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:3
+migrations	../src/screens/migrations/0002_seat_name.py	/^from django.db import migrations, models$/;"	kind:namespace	line:4
+model	../src/api/serializers.py	/^        model = Screen$/;"	kind:variable	line:17
+model	../src/api/serializers.py	/^        model = User$/;"	kind:variable	line:9
+model_name	../src/screens/migrations/0002_seat_name.py	/^            model_name='seat',$/;"	kind:variable	line:16
+models	../src/api/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../src/base/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../src/screens/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:3
+models	../src/screens/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:4
+models	../src/screens/migrations/0002_seat_name.py	/^from django.db import migrations, models$/;"	kind:namespace	line:4
+models	../src/screens/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	../src/api/models.py	1;"	kind:file	line:1
+models.py	../src/base/models.py	1;"	kind:file	line:1
+models.py	../src/screens/models.py	1;"	kind:file	line:1
+name	../src/api/apps.py	/^    name = 'api'$/;"	kind:variable	line:5
+name	../src/base/apps.py	/^    name = 'base'$/;"	kind:variable	line:5
+name	../src/screens/apps.py	/^    name = 'screens'$/;"	kind:variable	line:5
+name	../src/screens/migrations/0001_initial.py	/^            name='Screen',$/;"	kind:variable	line:16
+name	../src/screens/migrations/0001_initial.py	/^            name='Seat',$/;"	kind:variable	line:22
+name	../src/screens/migrations/0002_seat_name.py	/^            name='name',$/;"	kind:variable	line:17
+name	../src/screens/models.py	/^    name = models.CharField(max_length=2)$/;"	kind:variable	line:12
+name	../src/screens/models.py	/^    name = models.CharField(max_length=40, primary_key=True)$/;"	kind:variable	line:7
+operations	../src/screens/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../src/screens/migrations/0002_seat_name.py	/^    operations = [$/;"	kind:variable	line:14
+os	../src/config/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../src/config/wsgi.py	/^import os$/;"	kind:namespace	line:10
+os	../src/manage.py	/^import os$/;"	kind:namespace	line:2
+party	../src/base/models.py	/^    party = models.CharField(max_length=100)$/;"	kind:variable	line:7
+path	../src/api/urls.py	/^from django.urls import path, include$/;"	kind:namespace	line:1
+path	../src/base/urls.py	/^from django.urls import path$/;"	kind:namespace	line:1
+path	../src/config/urls.py	/^from django.urls import path, include$/;"	kind:namespace	line:17
+pdb	../src/api/viewsets.py	/^        import pdb$/;"	kind:namespace	line:45
+preserve_default	../src/screens/migrations/0002_seat_name.py	/^            preserve_default=False,$/;"	kind:variable	line:19
+queryset	../src/api/viewsets.py	/^    queryset = Screen.objects.all()$/;"	kind:variable	line:15
+queryset	../src/api/viewsets.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:10
+redirect	../src/base/views.py	/^from django.shortcuts import render, redirect$/;"	kind:namespace	line:1
+render	../src/base/views.py	/^from django.shortcuts import render, redirect$/;"	kind:namespace	line:1
+render	../src/screens/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+response	../src/api/viewsets.py	/^from rest_framework import viewsets, response$/;"	kind:namespace	line:2
+router	../src/api/urls.py	/^router = routers.DefaultRouter()$/;"	kind:variable	line:6
+routers	../src/api/urls.py	/^from rest_framework import routers$/;"	kind:namespace	line:2
+screen	../src/screens/models.py	/^    screen = models.ForeignKey(to=Screen, on_delete=models.CASCADE)$/;"	kind:variable	line:11
+seat_info	../src/api/serializers.py	/^    seat_info = serializers.JSONField()$/;"	kind:variable	line:14
+serializer_class	../src/api/viewsets.py	/^    serializer_class = ScreenSerializer$/;"	kind:variable	line:16
+serializer_class	../src/api/viewsets.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:11
+serializers	../src/api/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:1
+serializers.py	../src/api/serializers.py	1;"	kind:file	line:1
+settings.py	../src/config/settings.py	1;"	kind:file	line:1
+signup	../src/base/views.py	/^def signup(request):$/;"	kind:function	line:10
+sys	../src/manage.py	/^import sys$/;"	kind:namespace	line:3
+tests.py	../src/api/tests.py	1;"	kind:file	line:1
+tests.py	../src/base/tests.py	1;"	kind:file	line:1
+tests.py	../src/screens/tests.py	1;"	kind:file	line:1
+urlpatterns	../src/api/urls.py	/^urlpatterns = [$/;"	kind:variable	line:11
+urlpatterns	../src/base/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
+urlpatterns	../src/config/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../src/api/urls.py	1;"	kind:file	line:1
+urls.py	../src/base/urls.py	1;"	kind:file	line:1
+urls.py	../src/config/urls.py	1;"	kind:file	line:1
+user	../src/base/models.py	/^    user = models.OneToOneField(User, on_delete=models.CASCADE)$/;"	kind:variable	line:6
+utc	../src/screens/migrations/0002_seat_name.py	/^from django.utils.timezone import utc$/;"	kind:namespace	line:5
+views	../src/base/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views.py	../src/base/views.py	1;"	kind:file	line:1
+views.py	../src/screens/views.py	1;"	kind:file	line:1
+viewsets	../src/api/viewsets.py	/^from rest_framework import viewsets, response$/;"	kind:namespace	line:2
+viewsets.py	../src/api/viewsets.py	1;"	kind:file	line:1
+wsgi.py	../src/config/wsgi.py	1;"	kind:file	line:1

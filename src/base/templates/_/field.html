@@ -1,0 +1,17 @@
+<div class="mb-4">
+  <label class="uppercase mb-2 block" for="{{ id }}">{{ label }}</label>
+  <input
+    type="{% firstof type 'text' %}"
+    name="{{ name }}" id="{{ id }}" placeholder="{{ ph }}"
+    value="{{ value | default_if_none:'' }}"
+    {{ attr }}
+    class="{{ class }} px-3 py-2 shadow block w-64 border border-grey-light rounded">
+
+  {% if errors %}
+    <ul class="list-reset text-red-light mt-2">
+    {% for error in errors %}
+        <li class="w-64">{{ error }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+</div>
