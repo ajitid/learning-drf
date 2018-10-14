@@ -11,6 +11,7 @@ djangorestframework = "*"
 
 [dev-packages]
 bpython = "*"
+rope = "*"
 
 [requires]
 python_version = "3.6"

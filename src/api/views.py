@@ -1,5 +1,9 @@
 from django.contrib.auth.models import User
-from rest_framework import viewsets, response, generics, views
+from rest_framework import viewsets, generics
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.decorators import action, api_view, renderer_classes
+from rest_framework.renderers import JSONRenderer
 
 from screens.models import Screen, Seat
 
@@ -8,6 +12,7 @@ from . import serializers
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
+    # filter_backends = (,)
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -15,41 +20,34 @@ class UserViewSet(viewsets.ModelViewSet):
         else:
             return serializers.UserSerializer
 
-    # def get(self, request):
 
-# class ScreenViewSet(viewsets.ViewSet):
-#     queryset = Screen.objects.all()
-#     serializer_class = ScreenSeatSerializer
+class ScreenViewSet(viewsets.ModelViewSet):
+    queryset = Screen.objects.all()
+    # serializer_class = serializers.ScreenSerializer
 
-#     def list(self, request):
-#         res = []
-#         for screen in Screen.objects.all():
-#             screen_info = {'name': screen.name, 'seat_info': {}}
-#             for seat in screen.seat_set.all():
-#                 screen_info['seat_info'][seat.name] = {
-#                     'count': seat.count,
-#                     'aisle': seat.aisle,
-#                     'reserved': seat.reserved,
-#                 }
-#             res.append(screen_info)
-#         return response.Response(res)
-
-#     def create(self, request):
-#         data = request.data
-#         screen = Screen.objects.get_or_create(name=data['name'])[0]
-#         for seat_name in data['seat_info'].keys():
-#             Seat.objects.create(
-#                 screen=screen,
-#                 name=seat_name,
-#                 count=data['seat_info'][seat_name]['count'],
-#                 aisle=data['seat_info'][seat_name]['aisle'],
-#                 reserved=[]
-#             )
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return serializers.ScreenLimitedFieldsSerializer
+        else:
+            return serializers.ScreenSerializer
 
 
-# class ReserveSeatsView(views.APIView):
-#     queryset = Screen.objects.all()
+@api_view()  # by default get
+# @renderer_classes((JSONRenderer,)) # by default api_view gives JSON and html renderer
+def seat_view(request, screen_name, seat_name):
+    seat = Seat.objects.filter(
+        name=seat_name, screen__name=screen_name).first()
+    if seat is None:
+        return Response(status=404)
+    data = serializers.SeatSerializer(seat).data
+    return Response(data)
 
-#     def post(self, request):
-#         screen_name = self.kwargs['screen_name']
-#         print(screen_name)
+
+class SeatView(APIView):
+    def get(self, request, seat_name, screen_name):
+        seat = Seat.objects.filter(
+            name=seat_name, screen__name=screen_name).first()
+        if seat is None:
+            return Response(status=404)
+        data = serializers.SeatSerializer(seat).data
+        return Response(data)
